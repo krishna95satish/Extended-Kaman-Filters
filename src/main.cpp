@@ -74,6 +74,7 @@ int main() {
             float py;
             iss >> px;
             iss >> py;
+            std::cout << "Px :" << px << "Py : "<< py << std::endl;
             meas_package.raw_measurements_ << px, py;
             iss >> timestamp;
             meas_package.timestamp_ = timestamp;
@@ -86,6 +87,7 @@ int main() {
             iss >> ro;
             iss >> theta;
             iss >> ro_dot;
+            std::cout << "Roh: " << ro << "Theta: "<< theta << "Ro_Dot: " << ro_dot << std::endl;
             meas_package.raw_measurements_ << ro,theta, ro_dot;
             iss >> timestamp;
             meas_package.timestamp_ = timestamp;
